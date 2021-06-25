@@ -7,7 +7,6 @@ let fragment;
 shareButton.addEventListener('click', changeCardFooter);
 
 window.addEventListener("resize", () => {
-    console.log("Change size");
     if(window.innerWidth < 900 && shareButton.classList.contains("card__footer-share--active")) {
         createFooterShare();
     } else if(window.innerWidth > 900 && !cardFooter.querySelector(".card__footer-description")) {
